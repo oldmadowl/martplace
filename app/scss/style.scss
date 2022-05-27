@@ -761,5 +761,159 @@
 }
 //end advantages
 
+//start weak
+.weak{
+  background-color: $gray;
+  padding: 120px 0;
+  &__title{
+    @extend %title-block;
+  }
+  &-item{
+    &__inner{
+      display: flex;
+      height: 450px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    &__img{
+      height: 100%;
+      width: 555px;
+      background-color: #4e5760;
+      flex-shrink: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &__info{
+      padding: 45px 50px 25px;
+      background-color: #fff;
+    }
+    &__title{
+      font-weight: 500;
+      font-size: 24px;
+      color: #000;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__details{
+      display: flex;
+      margin-bottom: 28px;
+    }
+    &__author{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #000;
+      margin-right: 20px;
+      span{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: $lilac;
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+    &__theme{
+      &::before{
+        background-image: url(../images/icons/wordpress.svg);
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &__text{
+      margin-bottom: 30px;
+    }
+    &__tags{
+      display: flex;
+      margin-bottom: 45px;
+    }
+    &__tag{
+      font-size: 15px;
+      color: #868c96;
+      line-height: 28px;
+      padding: 0 15px;
+      background-color: #f1f3f6;
+      border-radius: 20px;
+      & + &{
+        margin-left: 7px;
+      }
+    }
+    &__about{
+      border-top: 1px solid #ececec;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 23px;
+      &-data{
+        display: flex;
+        font-size: 15px;
+      }
+    }
+    &__price{
+      background-color: $blue;
+      color: #fff;
+      line-height: 32px;
+      font-weight: 500;
+      padding: 0 17px;
+      margin-right: 20px;
+      border-radius: 20px;
+    }
+    &__likes{
+      position: relative;
+      padding-left: 25px;
+      margin-right: 20px;
+      &::before{
+        content: '\e813';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        color: $lilac;
+      }
+    }
+    &__sells{
+      position: relative;
+      padding-left: 23px;
+      color: $blue;
+      &::before{
+        content: '\e82e';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+      }
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    top: -128px;
+    background-color: $lilac;
+    font-size: 14px;
+    color: #fff;
+    height: 45px;
+    width: 55px;
+  }
+  .slick-next{
+    right: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .slick-prev{
+    right: 85px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
+.weak-item__star-rate .jq-ry-normal-group svg{
+  stroke: #ffc000;
+  stroke-width: 50;
+}
+//end weak
+
 
 @import 'media';

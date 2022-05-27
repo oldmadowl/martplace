@@ -21,7 +21,9 @@ function scripts(){
 
 function pluginscripts(){
   src([
-    'node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/rateyo/jquery.rateyo.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -32,7 +34,9 @@ function pluginstyles(){
   return src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
-    'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/rateyo/jquery.rateyo.css'
   ])
   .pipe(concat('libs.min.css'))
   .pipe(csso())
