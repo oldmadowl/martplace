@@ -39,7 +39,46 @@ body, html{
 body{
   display: flex;
   flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text;
 }
 main{
   flex-grow: 1;
+}
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.theme{
+  color: $lilac;
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.arrow-bottom{
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    transition: all .3s;
+  }
+  &:hover{
+    &::before{
+      border-bottom-color: $blue;
+    }
+  }
 }

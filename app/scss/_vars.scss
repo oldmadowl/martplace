@@ -1,0 +1,17 @@
+$text: #555;
+$dark: #333;
+$blue: #0674ec;
+$gray: #eff1f5;
+$light-gray: #f6f7fb;
+$lilac: #7347c1;
+$white: #f3f3f8;
+
+%btn{
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 4px 18px;
+  background-color: $blue;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
