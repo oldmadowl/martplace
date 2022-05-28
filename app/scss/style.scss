@@ -1142,4 +1142,58 @@
 }
 //end reasons
 
+
+//start activities
+.activities{
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+  &__half{
+    width: 50%;
+    padding: 100px 0;
+  }
+  &__sell{
+    background: no-repeat url(../images/backgrounds/sell-bg.jpg) right -11px top 5px /cover, $blue left;
+    .activities__block{
+      margin-left: auto;
+      padding-left: 15px;
+    }
+  }
+  &__buy{
+    background: no-repeat url(../images/backgrounds/shopping-bg.jpg) left -11px top /cover, $lilac right;
+    .activities__block{
+      margin-right: auto;
+      padding-right: 15px;
+    }
+  }
+  &__block{
+    max-width: 597px;
+    text-align: center;
+    color: #fff;
+    margin: 0 190px;
+  }
+  &__img{
+    margin-bottom: 45px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 40px;
+  }
+  &__link{
+    padding: 12px 15px;
+    width: 190px;
+    text-align: center;
+    background-color: #fff;
+    color: $blue;
+    border-radius: 30px;
+  }
+}
+//end activities
+
 @import 'media';
