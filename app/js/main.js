@@ -26,6 +26,11 @@ $(function(){
     nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
   });
 
+  $('.footer__col-title').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).next('.footer__col-body').slideToggle();
+  });
+
   var mixer = mixitup('.product');
 
 });

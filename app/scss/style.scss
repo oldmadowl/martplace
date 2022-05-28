@@ -1518,10 +1518,11 @@
 }
 .social{
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -13px;
   &__item{
-    & + &{
-      margin-left: 13px;
-    }
+    margin-bottom: 13px;
+    margin-left: 13px;
   }
   &__link{
     width: 42px;
