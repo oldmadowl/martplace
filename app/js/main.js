@@ -19,6 +19,13 @@ $(function(){
     nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
   });
 
+  $('.feed__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
+    nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+  });
+
   var mixer = mixitup('.product');
 
 });
