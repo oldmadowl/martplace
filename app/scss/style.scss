@@ -1328,4 +1328,52 @@
 }
 //end news
 
+
+//start benefits
+.benefits{
+  padding: 60px 0 55px;
+  position: relative;
+  background-color: #fff;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: #e8eaf3;
+  }
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+  &__half{
+    width: 50%;
+    text-align: center;
+  }
+  &__item-img{
+    margin-bottom: 25px;
+  }
+  &__item-text{
+    font-size: 24px;
+    color: #000;
+  }
+  &__guarantee{
+    .benefits__item-text{
+      span{
+        color: $blue;
+      }
+    }
+  }
+  &__support{
+    .benefits__item-text{
+      span{
+        color: $lilac;
+      }
+    }
+  }
+}
+//end benefits
+
 @import 'media';
