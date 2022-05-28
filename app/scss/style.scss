@@ -1154,17 +1154,20 @@
     padding: 100px 0;
   }
   &__sell{
-    background: no-repeat url(../images/backgrounds/sell-bg.jpg) right -11px top 5px /cover, $blue left;
+    background: repeat-x url(../images/backgrounds/sell-bg.jpg) right top /cover, $blue left;
     .activities__block{
       margin-left: auto;
       padding-left: 15px;
     }
   }
   &__buy{
-    background: no-repeat url(../images/backgrounds/shopping-bg.jpg) left -11px top /cover, $lilac right;
+    background: repeat-x url(../images/backgrounds/shopping-bg.jpg) left top /cover, $lilac right;
     .activities__block{
       margin-right: auto;
       padding-right: 15px;
+    }
+    .activities__link{
+      color: $lilac;
     }
   }
   &__block{
@@ -1195,5 +1198,62 @@
   }
 }
 //end activities
+
+
+//start feedback
+.feedback{
+  padding: 115px 0 120px;
+  background-color: #fff;
+  text-align: center;
+  &__inner{
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__box{
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 2px solid $blue;
+    padding: 50px 40px 40px;
+    text-align: left;
+    & + &{
+      margin-left: 30px;
+    }
+  }
+  &__author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    &::after{
+      content: '\e83f';
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 60px;
+      color: #e8e8e8;
+      font-family: 'Linearicons-Free';
+    }
+    &-img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #808080;
+      margin-right: 18px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    &-name{
+      font-size: 20px;
+      color: #000;
+    }
+  }
+  &__link{
+    @extend %btn;
+    padding: 12px 34px;
+  }
+}
+//end feedback
 
 @import 'media';
