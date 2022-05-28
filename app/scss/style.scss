@@ -1376,4 +1376,30 @@
 }
 //end benefits
 
+
+//start join
+.join{
+  color: #fff;
+  padding: 100px 0 110px;
+  text-align: center;
+  background: linear-gradient(to right, rgba(103,30,144,1) 0%,rgba(90,33,154,1) 21%,rgba(60,42,179,1) 50%,rgba(31,51,203,1) 74%,rgba(12,55,218,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#671e90', endColorstr='#0c37da',GradientType=1 );
+  &__title{
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  &__link{
+    color: $blue;
+    background-color: #fff;
+    padding: 13px 43px 12px;
+    border-radius: 30px;
+  }
+}
+//end join
+
 @import 'media';
