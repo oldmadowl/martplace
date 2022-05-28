@@ -365,13 +365,6 @@
     justify-content: center;
     align-items: center;
   }
-  &__theme{
-    &::before{
-      background-image: url(../images/icons/wordpress.svg);
-      width: 16px;
-      height: 16px;
-    }
-  }
   &__del{
     font-size: 15px;
     color: #818c98;
@@ -761,8 +754,8 @@
 }
 //end advantages
 
-//start weak
-.weak{
+//start week
+.week{
   background-color: $gray;
   padding: 120px 0;
   &__title{
@@ -771,12 +764,12 @@
   &-item{
     &__inner{
       display: flex;
-      height: 450px;
+      min-height: 450px;
       border-radius: 4px;
       overflow: hidden;
     }
     &__img{
-      height: 100%;
+      min-height: 100%;
       width: 555px;
       background-color: #4e5760;
       flex-shrink: 0;
@@ -800,31 +793,6 @@
       display: flex;
       margin-bottom: 28px;
     }
-    &__author{
-      display: flex;
-      align-items: center;
-      font-size: 15px;
-      color: #000;
-      margin-right: 20px;
-      span{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-color: $lilac;
-        margin-right: 10px;
-        display: inline-block;
-      }
-    }
-    &__theme{
-      &::before{
-        background-image: url(../images/icons/wordpress.svg);
-        width: 16px;
-        height: 16px;
-      }
-    }
     &__text{
       margin-bottom: 30px;
     }
@@ -843,17 +811,6 @@
         margin-left: 7px;
       }
     }
-    &__about{
-      border-top: 1px solid #ececec;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 23px;
-      &-data{
-        display: flex;
-        font-size: 15px;
-      }
-    }
     &__price{
       background-color: $blue;
       color: #fff;
@@ -863,29 +820,15 @@
       margin-right: 20px;
       border-radius: 20px;
     }
-    &__likes{
-      position: relative;
-      padding-left: 25px;
-      margin-right: 20px;
-      &::before{
-        content: '\e813';
-        font-family: 'Linearicons-Free';
-        position: absolute;
-        left: 0;
-        bottom: 3px;
-        color: $lilac;
-      }
-    }
-    &__sells{
-      position: relative;
-      padding-left: 23px;
-      color: $blue;
-      &::before{
-        content: '\e82e';
-        font-family: 'Linearicons-Free';
-        position: absolute;
-        left: 0;
-        bottom: 3px;
+    &__about{
+      border-top: 1px solid #ececec;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 23px;
+      &-data{
+        display: flex;
+        font-size: 15px;
       }
     }
   }
@@ -908,12 +851,193 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
   }
+  .item__sells{
+    &::before{
+      bottom: 3px;
+    }
+  }
+  .item__likes{
+    margin-right: 20px;
+    &::before{
+      bottom: 3px;
+    }
+  }
 }
-.weak-item__star-rate .jq-ry-normal-group svg{
+.item__star-rate .jq-ry-normal-group svg{
   stroke: #ffc000;
   stroke-width: 50;
 }
-//end weak
+//end week
+
+
+//start product
+.product{
+  background-color: $light-gray;
+  padding: 120px 0;
+  &__title{
+    @extend %title-block;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  &__filter{
+    color: #747b86;
+    font-size: 16px;
+    text-transform: none;
+    position: relative;
+    padding-right: 30px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/more-icon.png);
+      width: 5px;
+      height: 20px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 77px;
+      right: -6px;
+      border-bottom: 16px solid transparent;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      z-index: 10;
+      transition: all .3s;
+    }
+    &:hover{
+      &::before{
+        border-bottom-color: #fff;
+        filter: drop-shadow(1px 1px 30px rgb(82, 85, 90));
+      }
+      .filter-menu{
+        transform: scaleY(1);
+      }
+    }
+  }
+  &__controls{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    padding: 30px;
+    margin-bottom: 50px;
+    display: flex;
+  }
+  &__control-btn{
+    color: #747b86;
+    font-size: 15px;
+    line-height: 32px;
+    background-color: #f1f3f6;
+    border-radius: 20px;
+    padding: 0 18px;
+    transition: all .3s;
+    & + &{
+      margin-left: 10px;
+    }
+    &:hover{
+      color: #fff;
+      background-color: $blue;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .item{
+    width: calc(33.333% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  &__img-info{
+    height: 100%;
+    background-image: linear-gradient( 270deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+    transition: all .3s;
+    opacity: 0;
+  }
+  &__img-buttons{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__img-btn{
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: all .3s;
+    & + &{
+      margin-left: 11px;
+    }
+    &:hover{
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+  &__all-btn{
+    @extend %btn;
+    padding: 14px 20px;
+    width: 190px;
+    display: block; 
+    text-align: center;
+    margin: 60px auto 0;
+  }
+}
+.item__img{
+  &:hover{
+    .product__img-info{
+      opacity: 1;
+    }
+  }
+}
+.filter-menu{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  padding: 25px;
+  top: 88px;
+  right: -22px;
+  transition: all .3s;
+  transform-origin: top;
+  transform: scaleY(0);
+  &__item{
+    display: block;
+    & + &{
+      margin-top: 10px;
+    }
+  }
+  &__btn{
+    font-size: 15px;
+    color: #747b86;
+    transition: all .3s;
+    white-space: nowrap;
+    &:hover{
+      color: $blue;
+    }
+  }
+}
+.product__item{
+  .item__img{
+    height: 230px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .item__sells{
+    margin-left: auto;
+  }
+}
+//end product
 
 
 @import 'media';

@@ -65,6 +65,27 @@ main{
     top: 50%;
     transform: translateY(-50%);
   }
+  &.theme-wp{
+    &::before{
+      background-image: url(../images/icons/wordpress.svg);
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.theme-psd{
+    &::before{
+      background-image: url(../images/icons/psd-icon.svg);
+      width: 13px;
+      height: 17px;
+    }
+  }
+  &.theme-html{
+    &::before{
+      background-image: url(../images/icons/html-icon.png);
+      width: 15px;
+      height: 17px;
+    }
+  }
 }
 .arrow-bottom{
   &::before{
@@ -80,5 +101,83 @@ main{
     &::before{
       border-bottom-color: $blue;
     }
+  }
+}
+.item{
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  overflow: hidden;
+  &__author{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #000;
+    margin-right: 20px;
+    span{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: $lilac;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+  &__likes{
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    &::before{
+      content: '\e813';
+      font-family: 'Linearicons-Free';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: $lilac;
+    }
+  }
+  &__sells{
+    position: relative;
+    padding-left: 23px;
+    color: $blue;
+    &::before{
+      content: '\e82e';
+      font-family: 'Linearicons-Free';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__price{
+    font-size: 15px;
+    color: $blue;
+    background-color: #e6f1fd;
+    padding: 0 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-right: 14px;
+  }
+  &__about{
+    padding: 25px;
+  }
+  &__title{
+    font-weight: 500;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  &__details{
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__info{
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ececec;
   }
 }
