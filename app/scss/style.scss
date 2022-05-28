@@ -1003,8 +1003,6 @@
     max-width: 360px;
     margin-left: 30px;
   }
-  &__item-inner{
-  }
   .slick-arrow{
     background-color: $blue;
   }
@@ -1014,5 +1012,68 @@
 }
 //end feed
 
+
+//start statistics
+.statistics{
+  background-color: #212225;
+  padding: 95px 0 85px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    text-align: center;
+    position: relative;
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 50px;
+    &-img{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 48px;
+    }
+    &-info{
+
+    }
+    &-num{
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+    &-text{
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  .lnr-briefcase{
+    color: #feb71d;
+  }
+  .lnr-cloud-download{
+    color: #58c9e9;
+  }
+  .lnr-smile{
+    color: #77de51;
+  }
+  .lnr-users{
+    color: #ff6a6d;
+  }
+  .num-items{
+    color: #feb71d;
+  }
+  .num-sale{
+    color: #58c9e9;
+  }
+  .num-customer{
+    color: #77de51;
+  }
+  .num-member{
+    color: #ff6a6d;
+  }
+}
+//end statistics
 
 @import 'media';
