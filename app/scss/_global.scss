@@ -244,3 +244,20 @@ main{
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
+.title{
+  font-size: 36px;
+  line-height: normal;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+  span{
+    color: $blue;
+  }
+}
+.subtitle{
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
