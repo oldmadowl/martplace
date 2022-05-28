@@ -1402,4 +1402,154 @@
 }
 //end join
 
+
+//start footer
+.footer{
+  color: #ababab;
+  font-size: 15px;
+  &__top{
+    background-color: #262b30;
+    padding: 110px 0 120px;
+  }
+  &__copy{
+    background-color: #192027;
+    color: #999;
+    &-inner{
+      text-align: center;
+      padding: 33px 0;
+      span{
+        color: #fff;
+      }
+    }
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    margin-bottom: 25px;
+    line-height: 0;
+  }
+  &__about-text{
+    line-height: 28px;
+    margin-bottom: 22px;
+  }
+  &__contacts{
+    line-height: 26px;
+  }
+  &__phone,
+  &__mail,
+  &__adress{
+    position: relative;
+    padding-left: 30px;
+    margin-top: 10px;
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #fff;
+      font-family: 'Linearicons-Free';
+    }
+  }
+  &__phone::before{
+    content: '\e830';
+  }
+  &__mail::before{
+    content: '\e818';
+  }
+  &__adress::before{
+    content: '\e833';
+  }
+  &__col{
+    flex-shrink: 0;
+    &--about{
+      width: 270px;
+    }
+    &--list{
+      width: 135px;
+    }
+    &--subscribe{
+      width: 365px;
+    }
+  }
+  &__col-title{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    color: #fff;
+  }
+  &__col-item{
+    display: block;
+    & + &{
+      margin-top: 3px;
+    }
+  }
+  &__subscribe-text{
+    margin-bottom: 25px;
+  }
+  &__form{
+    width: 100%;
+    position: relative;
+    margin-bottom: 48px;
+    &-input{
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 30px;
+      height: 50px;
+      padding: 0 123px 0 30px;
+    }
+    &-btn{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 50px;
+      background-color: $blue;
+      color: #fff;
+      width: 110px;
+      text-align: center;
+      border-radius: 30px;
+      padding: 0 10px;
+    }
+  }
+}
+.social{
+  display: flex;
+  &__item{
+    & + &{
+      margin-left: 13px;
+    }
+  }
+  &__link{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+  }
+  .icon-facebook{
+    background-color: #395799;
+  }
+  .icon-twitter{
+    background-color: #19b2f5;
+  }
+  .icon-google{
+    background-color: #f05b44;
+  }
+  .icon-pinterest{
+    background-color: #9c0c1c;
+  }
+  .icon-linkedin{
+    background-color: #0da6be;
+  }
+  .icon-dribbble{
+    background-color: #ea4c89;
+  }
+}
+//end footer
+
 @import 'media';
