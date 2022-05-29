@@ -17,6 +17,28 @@ $(function(){
     slidesToScroll: 1,
     prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
   });
 
   $('.feed__slider').slick({
@@ -24,6 +46,30 @@ $(function(){
     slidesToScroll: 3,
     prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   $('.footer__col-title').on('click', function(){

@@ -1042,7 +1042,6 @@
     @extend %title-block;
   }
   .slick-slide{
-    max-width: 360px;
     margin-left: 30px;
   }
   .slick-arrow{
@@ -1262,6 +1261,7 @@
     align-items: center;
     margin-bottom: 25px;
     position: relative;
+    padding-right: 70px;
     &::after{
       content: '\e83f';
       position: absolute;

@@ -1,3 +1,23 @@
+@media (max-width: 1200px){
+  .advantages__item:hover{
+    box-shadow: none;
+  }
+  .advantages__item{
+    padding: 35px 15px 40px;
+  }
+  .product__controls{
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+  .product__control-btn{
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .activities__block{
+    margin: 0 40px;
+  }
+}
+
 @media (max-width: 1100px){
   .footer__inner{
     flex-wrap: wrap;
@@ -8,6 +28,22 @@
   .footer__col--about{
     width: 100%;
     margin-bottom: 40px;
+  }
+  .week-item__info{
+    padding: 45px 15px 25px 20px
+  }
+  .product .item{
+    width: calc(50% - 30px);
+  }
+  .reasons__list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news__inner{
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .news__item{
+    width: calc(50% - 30px);
   }
 }
 
@@ -89,6 +125,66 @@
       display: block;
     }
   }
+  .week-item__inner{
+    flex-direction: column;
+  }
+  .week-item__img{
+    width: 100%;
+    min-height: 100%;
+    height: 400px;
+  }
+  .week-item__info{
+    padding: 45px 20px 25px;
+  }
+  .week{
+    .slick-slide{
+      margin-left: 30px;
+    }
+    .slick-list{
+      margin-left: -30px;
+    }
+  }
+  .feedback__inner{
+    flex-direction: column;
+  }
+  .feedback__box+.feedback__box{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px){
+  .advantages__inner{
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .advantages__item{
+    padding: 0;
+    flex-basis: auto;
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    &:last-child{
+      width: 100%;
+    }
+  }
+  .advantages{
+    margin-bottom: 60px;
+  }
+  .week-item__info{
+    padding: 20px 15px;
+  }
+  .activities__inner{
+    display: block;
+  }
+  .activities__half{
+    width: 100%;
+  }
+  .activities__block{
+    margin: 0;
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 800px){
@@ -105,6 +201,130 @@
   .header__btn{
     display: none;
   }
+  .offer__title{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .offer__text{
+    font-size: 16px;
+  }
+  .offer__inner{
+    min-height: 550px;
+  }
+  .offer__form{
+    padding: 40px 20px;
+  }
+  .offer__form-btn{
+    width: 170px;
+  }
+  .offer__select{
+    width: 160px;
+  }
+  .offer .jq-selectbox__select{
+    padding: 0 40px 0 10px;
+  }
+  .offer__input{
+    width: calc(100% - 160px);
+    padding: 0 10px;
+  }
+  .week-item__img{
+    height: 250px;
+  }
+  .product__controls{
+    padding: 10px;
+    padding-left: 0;
+  }
+  .item__about{
+    padding: 10px;
+  }
+  .item__info{
+    padding: 15px 10px;
+  }
+  .item__price{
+    padding: 0 5px;
+    margin-right: 10px;
+  }
+  .reasons__item{
+    padding: 150px 10px 50px;
+  }
+  .benefits::before{
+    display: none;
+  }
+  .benefits__inner{
+    display: block;
+  }
+  .benefits__item{
+    display: flex;
+    align-items: center;
+  }
+  .benefits__item-img{
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .benefits__half{
+    width: 100%;
+    text-align: left;
+    & + &{
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  .product .item{
+    width: 100%;
+  }
+  .item__price{
+    padding: 0 18px;
+    margin-right: 15px;
+  }
+  .statistics__inner{
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .statistics__item{
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .statistics{
+    padding: 80px 0 30px;
+  }
+  .reasons__item-title{
+    font-size: 18px;
+  }
+  .reasons__text{
+    font-size: 14px;
+  }
+  .reasons__icon{
+    font-size: 40px;
+  }
+  .reasons__item{
+    padding: 115px 10px 50px;
+  }
+  .news{
+    .item__title{
+      font-size: 18px;
+    }
+    .item__text{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .item__info{
+      flex-wrap: wrap;
+    }
+    .news__item-time{
+      width: 100%;
+    }
+    .news__item-nums{
+      &::before{
+        display: none;
+      }
+    }
+    .news__item-messages{
+      margin-left: 0;
+    }
+  } 
 }
 
 @media (max-width: 650px){
@@ -189,6 +409,54 @@
       display: block;
     }
   }
+  .offer__form{
+    flex-wrap: wrap;
+  }
+  .offer__form-search{
+    margin-bottom: 30px;
+  }
+  .offer__form-btn{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .advantages__item{
+    width: 100%;
+  }
+  .week__title,
+  .product__title,
+  .feed__title{
+    font-size: 25px;
+  }
+  .product__title,
+  .feed__title{
+    padding: 0 10px;
+  }
+  .news{
+    .item{
+      width: 100%;
+    }
+    .item__title{
+      font-size: 20px;
+    }
+    .item__text{
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .item__info{
+      flex-wrap: nowrap;
+    }
+    .news__item-time{
+      width: auto;
+    }
+    .news__item-nums{
+      &::before{
+        display: block;
+      }
+    }
+    .news__item-messages{
+      margin-left: 32px;
+    }
+  } 
 }
 
 @media (max-width: 600px){
@@ -240,6 +508,27 @@
   .footer__col-link{
     display: block;
   }
+  .week__title{
+    padding: 0 10px;
+  }
+  .product__filter{
+    span{
+      display: none;
+    }
+  }
+  .reasons__list{
+    grid-template-columns: 1fr;
+  }
+  .reasons__icon{
+    font-size: 60px;
+  }
+  .reasons__item {
+    padding: 135px 10px 50px;
+  }
+  .reasons,
+  .news{
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 500px){
@@ -273,6 +562,101 @@
     left: 15px;
     right: 0;
   }
+  .offer__title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .offer__text{
+    font-size: 14px;
+  }
+  .offer__btn{
+    width: 100%;
+    margin: 0;
+    & + &{
+      margin-top: 20px;
+    }
+  }
+  .offer__form{
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+    padding: 20px 15px;
+    &::before,
+    &::after{
+      display: none;
+    }
+  }
+  .offer__form-search{
+    flex-direction: column;
+  }
+  .offer__input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .offer__select{
+    width: 100%;
+  }
+  .offer .jq-selectbox__select{
+    border-left: 1px solid #dcdcdc;
+    border-radius: 4px;
+  }
+  .offer .jq-selectbox__select-text{
+    line-height: 50px;
+  }
+  .offer .jq-selectbox__dropdown{
+    left: 0;
+  }
+  .offer .jq-selectbox.focused .jq-selectbox__select{
+    border: 1px solid #dcdcdc;
+  }
+  .offer__form-btn{
+    width: 100%;
+  }
+  .offer{
+    margin-bottom: 0;
+  }
+  .product__control-btn{
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .activities__half{
+    padding: 50px 0;
+  }
+  .activities__title{
+    font-size: 30px;
+  }
+  .feedback__box{
+    padding: 50px 15px 40px;
+  }
+  .feedback__author::after{
+    font-size: 30px;
+  }
+  .feedback__author{
+    padding-right: 40px;
+  } 
+  .feedback__author-name{
+    font-size: 18px;
+  }
+  .feedback__author-img{
+    width: 60px;
+    height: 60px;
+  }
+  .benefits__item{
+    display: block;
+    text-align: center;
+  }
+  .benefits__item-img{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .join__title{
+    font-size: 25px;
+  }
+  .join__text{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px){
@@ -300,10 +684,93 @@
   .cart__title{
     font-size: 14px;
   }
+  .week-item__title{
+    font-size: 20px;
+  }
+  .week-item__details{
+    margin-bottom: 20px;
+  }
+  .week-item__text{
+    font-size: 14px;
+  }
+  .week-item__tags{
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-left: -7px;
+  }
+  .week-item__tag{
+    margin-left: 7px;
+    margin-bottom: 7px;
+  }
+  .week-item__about{
+    flex-wrap: wrap;
+  }
+  .week-item__about-data{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item__price{
+    padding: 0 5px;
+    margin-right: 10px;
+  }
+  .item__info{
+    flex-wrap: wrap;
+  }
+  .star-wrapper{
+    order: 1;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .item__img-info{
+    display: none;
+  }
+  .item__details{
+    margin-bottom: 15px;
+  }
+  .item__text{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .item__title{
+    font-size: 17px;
+  }
+  .statistics__item{
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .activities__text{
+    text-align: justify;
+  }
+  .activities__link{
+    width: 100%;
+  }
+  .feedback__author::after{
+    display: none;
+  }
+  .feedback__author{
+    padding-right: 0;
+  }
+  .feedback__box{
+    padding: 20px 10px;
+  }
+  .feedback{
+    padding: 60px 0;
+  } 
+  .feedback__link,
+  .join__link{
+    width: 100%;
+  }
+  .news .news__item-nums::before{
+    display: none;
+  }
+  .news__item-messages, .news__item-views{
+    margin-left: 20px;
+  }
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 1001px){
   .menu__list{
     display: block !important;
   }
