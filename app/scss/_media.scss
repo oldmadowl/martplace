@@ -758,7 +758,8 @@
     padding: 60px 0;
   } 
   .feedback__link,
-  .join__link{
+  .join__link,
+  .error__link{
     width: 100%;
   }
   .news .news__item-nums::before{
@@ -766,6 +767,9 @@
   }
   .news__item-messages, .news__item-views{
     margin-left: 20px;
+  }
+  .error__text{
+    font-size: 20px;
   }
 }
 
