@@ -13,11 +13,13 @@
   &__top{
     background-color: #eef1f3;
     &-inner{
+      position: relative;
       height: 100px;
     }
   }
   &__bottom{
     background-color: #fff;
+    position: relative;
     &-inner{
       height: 80px;
       position: relative;
@@ -26,6 +28,23 @@
   &__btn{
     @extend %btn;
     margin-right: 50px;
+  }
+  &__options-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $blue;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    display: none;
   }
   &__options{
     display: flex;
@@ -36,7 +55,7 @@
     align-items: center;
     margin-right: 45px;
   }
-  &__icon-wrapper{
+  &__pin-wrapper{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -97,13 +116,26 @@
       color: $blue;
     }
   }
+  &__form-open{
+    color: #fff;
+    font-size: 15px;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #0674ec;
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+  }
   &__form{
     position: relative;
   }
   &__form-input{
     width: 360px;
     height: 45px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid #d9dfe5;
     padding: 0 85px 0 25px;
     font-size: 15px;
@@ -140,6 +172,19 @@
   }
 }
 .menu{
+  &__btn{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+    &-line{
+      height: 4px;
+      background-color: $text;
+      width: 100%;
+      & + &{
+        margin-top: 4px;
+      }
+    }
+  }
   &__item{
     & + &{
       margin-left: 30px;
@@ -158,8 +203,7 @@
     }
   }
 }
-.icon-menu{
-  z-index: 5;
+.pin-menu{
   position: absolute;
   background-color: #fff;
   top: 100%;
@@ -170,6 +214,7 @@
   transition: all .3s;
   transform-origin: top;
   transform: scaleY(0);
+  z-index: 30;
   &__header{
     display: flex;
     justify-content: space-between;
@@ -319,10 +364,10 @@
     font-size: 15px;
     padding-right: 15px;
   }
-  .icon-menu__row{
+  .pin-menu__row{
     display: block;
   }
-  .icon-menu__row-info{
+  .pin-menu__row-info{
     padding-right: 0;
     flex-grow: 1;
   }
@@ -411,11 +456,11 @@
     }
   }
 }
-.header__icon-wrapper:hover .icon-menu{
+.header__pin-wrapper:hover .pin-menu{
   transform: scaleY(1);
 }
 .header-dropdown{
-  z-index: 5;
+  z-index: 25;
   position: absolute;
   background-color: #fff;
   padding: 20px;
@@ -748,9 +793,6 @@
     color: #010101;
     margin-bottom: 15px;
   }
-  &__item-text{
-
-  }
 }
 //end advantages
 
@@ -1036,9 +1078,6 @@
       transform: translateX(-50%);
       font-size: 48px;
     }
-    &-info{
-
-    }
     &-num{
       font-size: 36px;
       line-height: 36px;
@@ -1115,9 +1154,6 @@
     font-size: 24px;
     color: #000;
     margin-bottom: 20px;
-  }
-  &__text{
-
   }
   .lnr{
     &-license{

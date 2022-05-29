@@ -31,6 +31,31 @@ $(function(){
     $(this).next('.footer__col-body').slideToggle();
   });
 
+  $('.header__form-open').on('click', function(){
+    $('.header__form').slideToggle();
+  });
+
+  $('.header__options-btn').on('click', function(){
+    $('.header__options').toggleClass('active');
+  });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').slideToggle();
+  });
+
+  $('.menu__dropdown, .pages-item').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).children('.header-dropdown, .pages').toggleClass('active');
+  });
+
+  $('.header__pin-wrapper').on('click', function(){
+    $(this).children('.pin-menu').toggleClass('active');
+  });
+
+  $('.header__user').on('click', function(){
+    $('.user__header-dropdown').toggleClass('active');
+  });
+
   var mixer = mixitup('.product');
 
 });
