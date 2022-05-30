@@ -691,6 +691,11 @@
   .contact__item{
     width: 100%;
   }
+  .register{
+    .login__inner-header{
+      padding: 53px 10px 20px;
+    }
+  }
 }
 
 @media (max-width: 400px){

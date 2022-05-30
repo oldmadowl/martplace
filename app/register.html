@@ -787,19 +787,28 @@
     </div>
   </div>
   <main class="main">
-    <section class="login">
+    <section class="login register">
       <div class="container">
         <div class="login__inner">
           <div class="login__inner-header">
             <div class="login__title">
-              Welcome Back
+              Create Your Account
             </div>
             <div class="login__subtitle">
-              You can sign in with your username
+              Please fill the following fields with appropriate information
+              to register a new MartPlace account.
             </div>
           </div>
           <div class="login__inner-body">
             <form class="login__form">
+              <label class="login__form-label">
+                <span>Your Name</span>
+                <input class="login__form-input" type="text" placeholder="Enter your name..." required>
+              </label>
+              <label class="login__form-label">
+                <span>Email Address</span>
+                <input class="login__form-input" type="email" placeholder="Enter your email address" required>
+              </label>
               <label class="login__form-label">
                 <span>Username</span>
                 <input class="login__form-input" type="text" placeholder="Enter your username..." required>
@@ -808,21 +817,15 @@
                 <span>Password</span>
                 <input class="login__form-input" type="password" placeholder="Enter your password..." required>
               </label>
-              <label class="login__checkbox-label">
-                <input class="login__checkbox" type="checkbox" value="remember">
-                <span>Remember me</span>
+              <label class="login__form-label">
+                <span>Confirm Password</span>
+                <input class="login__form-input" type="password" placeholder="Enter your password..." required>
               </label>
               <button class="login__form-btn" type="submit">Login Now</button>
             </form>
             <div class="login__link-row">
-              <div class="login__lost">
-                Lost your 
-                <a class="login__link" href="#">username</a> 
-                or <a class="login__link" href="#">password</a>?   
-              </div>
-              <div class="login__create">
-                Don't have an <a class="login__link" href="#">account</a>?
-              </div>
+              Already have an account? 
+              <a class="login__link" href="#">Login</a>
             </div>
           </div>
         </div>

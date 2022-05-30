@@ -1858,6 +1858,14 @@
     color: $blue;
   }
 }
+.register{
+  .login__inner-header{
+    padding: 53px 60px 20px;
+  }
+  .login__link-row{
+    display: block;
+  }
+}
 //end login
 
 
