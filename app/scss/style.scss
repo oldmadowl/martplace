@@ -1687,9 +1687,6 @@
     margin-left: 30px;
     width: calc(33.333% - 30px);
     margin-bottom: 50px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     text-align: center;
     padding: 50px 60px 45px;
   }
@@ -1709,9 +1706,6 @@
     display: block;
   }
   &__form{
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     margin-bottom: 120px;
     &-title{
       font-size: 24px;
@@ -1767,9 +1761,6 @@
   background-color: $gray;
   &__inner{
     max-width: 555px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     margin: 0 auto;
   }
   &__inner-header{
@@ -1868,6 +1859,28 @@
 }
 //end login
 
+
+//start terms
+.terms{
+  background-color: $gray;
+  padding: 60px 0 120px;
+  &__inner{
+    padding-bottom: 75px;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    padding: 35px 30px 20px;
+    border-bottom: 1px solid #e8ebf0;
+    margin-bottom: 25px;
+  }
+  &__text{
+    padding: 0 30px;
+    margin-bottom: 15px;
+  }
+}
+//end terms
 
 
 @import 'media';
