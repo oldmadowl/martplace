@@ -16,6 +16,50 @@
   .activities__block{
     margin: 0 40px;
   }
+  .category__items .item{
+    width: calc(50% - 30px);
+  }
+  .category__items.list{
+    .item__nums{
+      padding: 0 10px;
+    }
+    .item__info{
+      padding-left: 10px;
+    }
+    .item__body{
+      padding: 20px 10px 20px 0;
+    }
+    .item__about{
+      padding-right: 5px;
+    }
+    .item__title{
+      font-size: 14px;
+    }
+    .item__text--list{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .item__author--list{
+      font-size: 14px;
+      span{
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+      }
+    }
+    .item__likes--list,
+    .item__comments--list{
+      font-size: 12px;
+    }
+    .item__star-num--list{
+      font-size: 12px;
+      margin-left: 0;
+    }
+    .item__price{
+      width: 80px;
+      padding: 0 5px;
+    }
+  } 
 }
 
 @media (max-width: 1100px){
@@ -185,6 +229,12 @@
   .how__img{
     margin-bottom: 40px;
   }
+  .category__control-inner{
+    flex-wrap: wrap;
+  }
+  .category__items-view{
+    display: none;
+  }
 }
 
 @media (max-width: 900px){
@@ -218,6 +268,17 @@
     margin: 0;
     max-width: 100%;
     padding: 0 15px;
+  }
+  .category__items .item{
+    width: 100%;
+  }
+  .category__control-links{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .category__control-inner{
+    height: auto;
+    padding: 20px 0;
   }
 }
 
@@ -370,6 +431,15 @@
   } 
   .top-how{
     text-align: left;
+  }
+  .category__inner{
+    flex-direction: column;
+  }
+  .category__items{
+    margin-left: -30px;
+  }
+  .category__items .item{
+    width: calc(50% - 30px);
   }
 }
 
@@ -600,6 +670,28 @@
   .how__img{
     max-width: 100%;
   }
+  .category__items .item{
+    width: 100%;
+  }
+  .category__control-select{
+    & + &{
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  }
+  .category__control-buttons{
+    width: 100%;
+    display: block;
+  }
+  .category{
+    .jq-selectbox.jqselect.category__control-select{
+      width: 100%;
+      margin-left: 0;
+    }
+    .jq-selectbox__select{
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 500px){
@@ -742,6 +834,15 @@
   .terms__title{
     padding: 35px 10px 20px;
   }
+  .category-top__btn{
+    width: 80px;
+  }
+  .category-top__input{
+    padding: 0 90px 0 15px;
+  }
+  .category__pagination{
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 400px){
@@ -865,7 +966,8 @@
   }
   .contact__form-btn,
   .login__form-btn,
-  .how__link{
+  .how__link,
+  .category__range-btn{
     width: 100%;
   }
   .contact__form{

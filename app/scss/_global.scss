@@ -115,6 +115,7 @@ main{
     color: #000;
     margin-right: 20px;
     span{
+      flex-shrink: 0;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -265,4 +266,20 @@ main{
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.form{
+  position: relative;
+}
+.input{
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+}
+.input-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: $blue;
+  border-radius: 30px;
 }
