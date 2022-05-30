@@ -157,6 +157,27 @@
   .contact__form-body{
     padding: 0 25px 60px;
   }
+  .pricing__item{
+    width: calc(50% - 30px);
+    .tooltip::after{
+      right: -50px;
+      left: auto;
+      top: 25px;
+    }
+    .tooltip:hover::after{
+      top: 25px;
+    }
+  }
+  .pricing__inner{
+    flex-wrap: wrap;
+  }
+  .pricing__item:last-child{
+    .tooltip::after{
+      right: -50px;
+      left: auto;
+      top: 25px;
+    }
+  }
 }
 
 @media (max-width: 900px){
@@ -481,6 +502,9 @@
     margin-left: 0;
     width: 100%;
     margin-bottom: 30px;
+  }
+  .pricing__item{
+    width: 100%;
   }
 }
 
@@ -844,6 +868,9 @@
   }
   .contact__form-textarea{
     padding: 20px 15px;
+  }
+  .pricing__item{
+    padding: 20px 10px 30px;
   }
 }
 

@@ -1891,4 +1891,149 @@
 //end recover
 
 
+//start pricing
+.pricing{
+  padding: 110px 0 90px;
+  background-color: $gray;
+  &__inner{
+    display: flex;
+    margin-left: -30px;
+  }
+  &__item{
+    width: calc(33.333% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 20px 30px 30px;
+    border-top: 3px solid transparent;
+    &--starter{
+      border-color: #ff6a6c;
+    }
+    &--business{
+      border-color: $blue;
+    }
+    &--agency{
+      border-color: #feb71d;
+    }
+  }
+  &__item-title{
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+  &__item-price{
+    text-align: center;
+    margin-bottom: 35px;
+    span{
+      font-size: 36px;
+      line-height: normal;
+      color: #000;
+      position: relative;
+      padding-left: 10px;
+      &::before{
+        content: '$';
+        position: absolute;
+        font-size: 18px;
+        left: 0;
+        top: 7px;
+      }
+    }
+  }
+  &__item-list{
+    margin-bottom: 30px;
+  }
+  &__list-item{
+    display: block;
+    .pricing__list-content{
+      padding-left: 23px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #c5cad4;
+      }
+    }
+    .accent{
+      font-weight: 500;
+      color: #000;
+    }
+  }
+  &__btn{
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    padding: 11px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+  }
+}
+.pricing__item--starter{
+  .pricing__btn{
+    background-color: #ff6a6c;
+  }
+}
+.pricing__item--business{
+  .pricing__btn{
+    background-color: $blue;
+  }
+}
+.pricing__item--agency{
+  .pricing__btn{
+    background-color: #feb71d;
+  }
+}
+.pricing .tooltip{
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  transform: translateY(-50%);
+  cursor: help;
+  font-size: 18px;
+  color: $text;
+  z-index: 20;
+  &::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    background-color: $text;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0;
+    width: 0;
+    left: 30px;
+    top: -10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+  }
+  &:hover{
+    &::after{
+      opacity: 1;
+      top: 0;
+      width: 250px;
+      padding: 10px;
+    }
+  }
+}
+.pricing__item:last-child{
+  .tooltip::after{
+    right: 25px;
+    left: auto;
+  }
+}
+//end pricing
+
+
 @import 'media';
