@@ -1611,7 +1611,7 @@
 .breadcrumbs{
   font-size: 15px;
   margin-bottom: 20px;
-  width: 1920px;
+  width: 1140px;
   overflow: hidden;
   &__item{
     color: #bfcad7;
@@ -1637,6 +1637,27 @@
   font-weight: 500;
   font-size: 30px;
   line-height: normal;
+}
+.page-subtitle{
+  font-size: 30px;
+  font-weight: 300;
+}
+.top-how{
+  text-align: center;
+  padding: 83px 0 24px;
+  .page-title,
+  .page-subtitle{
+    color: #f3f3f8;
+  }
+  .page-title{
+    margin-bottom: 15px;
+  }
+  .page-subtitle{
+    margin-bottom: 60px;
+  }
+  .breadcrumbs{
+    margin-bottom: 0;
+  }
 }
 //end top
 
@@ -2035,5 +2056,58 @@
 }
 //end pricing
 
+
+//start how
+.how{
+  &__row{
+    background-color: #fff;
+  }
+  &__inner{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{ 
+    flex-basis: 460px;
+  }
+  &__img{
+    width: 457px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  &__text{
+    margin-bottom: 20px;
+  }
+  &__link{
+    padding: 11px 10px;
+    width: 170px;
+    background-color: #fff;
+    text-align: center;
+    color: $blue;
+    transition: all .3s;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    border-radius: 30px;
+    &:hover{
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+}
+.how__row:nth-child(even){
+  background-color: $gray;
+  .how__inner{
+    flex-direction: row-reverse;
+  }
+}
+//end how
 
 @import 'media';
