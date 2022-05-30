@@ -1,7 +1,7 @@
 $(function(){
 
   
-  $('select').styler();
+  $('select, input[type=checkbox]').styler();
 
   $('.item__star-rate').rateYo({
     rating: 4.5,
