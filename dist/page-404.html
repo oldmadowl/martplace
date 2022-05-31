@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner header__inner">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="header__options-btn lnr lnr-user"></div>
+          <div class="header__options">
+            <a class="header__btn" href="#">Become a Seller</a>
+            <div class="header__icons">
+              <div class="header__pin-wrapper arrow-bottom">
+                <a class="header__icon lnr lnr-alarm" href="#">
+                  <span>25</span>
+                </a>
+                <div class="pin-menu notification">
+                  <div class="pin-menu__header">
+                    <div class="pin-menu__title">My Notifications</div>
+                    <a class="pin-menu__link" href="#">View All</a>
+                  </div>
+                  <div class="pin-menu__body">
+                    <div class="pin-menu__row">
+                      <div class="pin-menu__row-img" style="background-image: url();"></div>
+                      <div class="pin-menu__row-info">
+                        <div class="notification__title">
+                          <span class="notification__name">Anderson</span>
+                          <span class="notification__text">added to Favourite</span>
+                          <a class="notification__link" href="#">Marketify Coffee Shop</a>
+                        </div>
+                        <div class="notification__time">Just now</div>
+                      </div>
+                      <div class="notification__icon lnr lnr-heart"></div>
+                    </div>
+                    <div class="pin-menu__row">
+                      <div class="pin-menu__row-img" style="background-image: url();"></div>
+                      <div class="pin-menu__row-info">
+                        <div class="notification__title">
+                          <span class="notification__name">Michael Jorden</span>
+                          <span class="notification__text">commented on</span>
+                          <a class="notification__link" href="#">MartPlace Extension Bundle</a>
+                        </div>
+                        <div class="notification__time">2 hours ago</div>
+                      </div>
+                      <div class="notification__icon lnr lnr-bubble"></div>
+                    </div>
+                    <div class="pin-menu__row">
+                      <div class="pin-menu__row-img" style="background-image: url();"></div>
+                      <div class="pin-menu__row-info">
+                        <div class="notification__title">
+                          <span class="notification__name">Moshed</span>
+                          <span class="notification__text">Purchased</span>
+                          <a class="notification__link" href="#">Bryson-Responsive Template</a>
+                        </div>
+                        <div class="notification__time">6 hours ago</div>
+                      </div>
+                      <div class="notification__icon lnr lnr-cart"></div>
+                    </div>
+                    <div class="pin-menu__row">
+                      <div class="pin-menu__row-img" style="background-image: url();"></div>
+                      <div class="pin-menu__row-info">
+                        <div class="notification__title">
+                          <span class="notification__name">Tamim</span>
+                          <span class="notification__text">wrote a review on</span>
+                          <a class="notification__link" href="#">Rida-Responsive vCard Temp...</a>
+                        </div>
+                        <div class="notification__time">2 days ago</div>
+                      </div>
+                      <div class="notification__icon lnr lnr-star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__pin-wrapper arrow-bottom">
+                <a class="header__icon lnr lnr-envelope" href="#">
+                  <span>6</span>
+                </a>
+                <div class="pin-menu message">
+                  <div class="pin-menu__header">
+                    <div class="pin-menu__title">My Messages
+                    </div>
+                    <a class="pin-menu__link" href="#">View All</a>
+                  </div>
+                  <div class="pin-menu__body">
+                    <div class="pin-menu__row">
+                      <a class="message__link" href="#">
+                        <div class="pin-menu__row-img" style="background-image: url();"></div>
+                        <div class="pin-menu__row-info">
+                          <div class="message__header new-message">
+                            <div class="message__name">Washim
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="16px" height="12px">
+                                  <path fill-rule="evenodd" fill="rgb(85, 85, 85)"
+                                    d="M7.333,3.338 L7.333,0.999 C7.333,0.448 6.884,0.0 6.333,0.0 C6.85,0.0 5.845,0.94 5.659,0.267 L5.229,0.665 C3.813,1.975 1.443,4.168 0.230,5.384 C0.81,5.534 0.0,5.752 0.0,5.999 C0.0,6.246 0.81,6.464 0.230,6.614 C1.443,7.830 3.813,10.23 5.229,11.333 L5.659,11.731 C5.845,11.904 6.85,11.999 6.333,11.999 C6.884,11.999 7.333,11.550 7.333,10.999 L7.333,8.668 C12.133,8.735 15.333,10.249 15.333,11.666 C15.333,11.850 15.482,11.999 15.666,11.999 C15.850,11.999 15.999,11.850 15.999,11.666 C15.999,7.174 12.142,3.501 7.333,3.338 ZM6.999,7.999 C6.815,7.999 6.666,8.148 6.666,8.332 L6.666,10.999 C6.666,11.183 6.516,11.332 6.333,11.332 C6.231,11.332 6.157,11.284 6.113,11.242 L5.682,10.844 C4.269,9.537 1.906,7.350 0.702,6.144 C0.684,6.126 0.666,6.74 0.666,5.999 C0.666,5.924 0.684,5.872 0.702,5.855 C1.906,4.648 4.269,2.461 5.682,1.154 L6.113,0.756 C6.157,0.715 6.231,0.666 6.333,0.666 C6.516,0.666 6.666,0.815 6.666,0.999 L6.666,3.666 C6.666,3.850 6.815,3.999 6.999,3.999 C11.7,3.999 14.363,6.616 15.156,10.89 C13.733,8.843 10.653,7.999 6.999,7.999 Z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div class="message__time">Just now</div>
+                          </div>
+                          <div class="message__prev">
+                            Hello John Smith! Nunc placerat id...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="pin-menu__row">
+                      <a class="message__link" href="#">
+                        <div class="pin-menu__row-img" style="background-image: url();"></div>
+                        <div class="pin-menu__row-info">
+                          <div class="message__header new-message">
+                            <div class="message__name">Bulbul Ahmed
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="16px" height="12px">
+                                  <path fill-rule="evenodd" fill="rgb(85, 85, 85)"
+                                    d="M7.333,3.338 L7.333,0.999 C7.333,0.448 6.884,0.0 6.333,0.0 C6.85,0.0 5.845,0.94 5.659,0.267 L5.229,0.665 C3.813,1.975 1.443,4.168 0.230,5.384 C0.81,5.534 0.0,5.752 0.0,5.999 C0.0,6.246 0.81,6.464 0.230,6.614 C1.443,7.830 3.813,10.23 5.229,11.333 L5.659,11.731 C5.845,11.904 6.85,11.999 6.333,11.999 C6.884,11.999 7.333,11.550 7.333,10.999 L7.333,8.668 C12.133,8.735 15.333,10.249 15.333,11.666 C15.333,11.850 15.482,11.999 15.666,11.999 C15.850,11.999 15.999,11.850 15.999,11.666 C15.999,7.174 12.142,3.501 7.333,3.338 ZM6.999,7.999 C6.815,7.999 6.666,8.148 6.666,8.332 L6.666,10.999 C6.666,11.183 6.516,11.332 6.333,11.332 C6.231,11.332 6.157,11.284 6.113,11.242 L5.682,10.844 C4.269,9.537 1.906,7.350 0.702,6.144 C0.684,6.126 0.666,6.74 0.666,5.999 C0.666,5.924 0.684,5.872 0.702,5.855 C1.906,4.648 4.269,2.461 5.682,1.154 L6.113,0.756 C6.157,0.715 6.231,0.666 6.333,0.666 C6.516,0.666 6.666,0.815 6.666,0.999 L6.666,3.666 C6.666,3.850 6.815,3.999 6.999,3.999 C11.7,3.999 14.363,6.616 15.156,10.89 C13.733,8.843 10.653,7.999 6.999,7.999 Z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div class="message__time">2 hours ago</div>
+                          </div>
+                          <div class="message__prev">
+                            Hello John Smith! Nunc placerat id...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="pin-menu__row">
+                      <a class="message__link" href="#">
+                        <div class="pin-menu__row-img" style="background-image: url();"></div>
+                        <div class="pin-menu__row-info">
+                          <div class="message__header">
+                            <div class="message__name">EchoTheme
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="16px" height="12px">
+                                  <path fill-rule="evenodd" fill="rgb(85, 85, 85)"
+                                    d="M7.333,3.338 L7.333,0.999 C7.333,0.448 6.884,0.0 6.333,0.0 C6.85,0.0 5.845,0.94 5.659,0.267 L5.229,0.665 C3.813,1.975 1.443,4.168 0.230,5.384 C0.81,5.534 0.0,5.752 0.0,5.999 C0.0,6.246 0.81,6.464 0.230,6.614 C1.443,7.830 3.813,10.23 5.229,11.333 L5.659,11.731 C5.845,11.904 6.85,11.999 6.333,11.999 C6.884,11.999 7.333,11.550 7.333,10.999 L7.333,8.668 C12.133,8.735 15.333,10.249 15.333,11.666 C15.333,11.850 15.482,11.999 15.666,11.999 C15.850,11.999 15.999,11.850 15.999,11.666 C15.999,7.174 12.142,3.501 7.333,3.338 ZM6.999,7.999 C6.815,7.999 6.666,8.148 6.666,8.332 L6.666,10.999 C6.666,11.183 6.516,11.332 6.333,11.332 C6.231,11.332 6.157,11.284 6.113,11.242 L5.682,10.844 C4.269,9.537 1.906,7.350 0.702,6.144 C0.684,6.126 0.666,6.74 0.666,5.999 C0.666,5.924 0.684,5.872 0.702,5.855 C1.906,4.648 4.269,2.461 5.682,1.154 L6.113,0.756 C6.157,0.715 6.231,0.666 6.333,0.666 C6.516,0.666 6.666,0.815 6.666,0.999 L6.666,3.666 C6.666,3.850 6.815,3.999 6.999,3.999 C11.7,3.999 14.363,6.616 15.156,10.89 C13.733,8.843 10.653,7.999 6.999,7.999 Z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div class="message__time">Jul 16</div>
+                          </div>
+                          <div class="message__prev">
+                            Hello John Smith! Nunc placerat id...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="pin-menu__row">
+                      <a class="message__link" href="#">
+                        <div class="pin-menu__row-img" style="background-image: url();"></div>
+                        <div class="pin-menu__row-info">
+                          <div class="message__header">
+                            <div class="message__name">Themeluva
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="16px" height="12px">
+                                  <path fill-rule="evenodd" fill="rgb(85, 85, 85)"
+                                    d="M7.333,3.338 L7.333,0.999 C7.333,0.448 6.884,0.0 6.333,0.0 C6.85,0.0 5.845,0.94 5.659,0.267 L5.229,0.665 C3.813,1.975 1.443,4.168 0.230,5.384 C0.81,5.534 0.0,5.752 0.0,5.999 C0.0,6.246 0.81,6.464 0.230,6.614 C1.443,7.830 3.813,10.23 5.229,11.333 L5.659,11.731 C5.845,11.904 6.85,11.999 6.333,11.999 C6.884,11.999 7.333,11.550 7.333,10.999 L7.333,8.668 C12.133,8.735 15.333,10.249 15.333,11.666 C15.333,11.850 15.482,11.999 15.666,11.999 C15.850,11.999 15.999,11.850 15.999,11.666 C15.999,7.174 12.142,3.501 7.333,3.338 ZM6.999,7.999 C6.815,7.999 6.666,8.148 6.666,8.332 L6.666,10.999 C6.666,11.183 6.516,11.332 6.333,11.332 C6.231,11.332 6.157,11.284 6.113,11.242 L5.682,10.844 C4.269,9.537 1.906,7.350 0.702,6.144 C0.684,6.126 0.666,6.74 0.666,5.999 C0.666,5.924 0.684,5.872 0.702,5.855 C1.906,4.648 4.269,2.461 5.682,1.154 L6.113,0.756 C6.157,0.715 6.231,0.666 6.333,0.666 C6.516,0.666 6.666,0.815 6.666,0.999 L6.666,3.666 C6.666,3.850 6.815,3.999 6.999,3.999 C11.7,3.999 14.363,6.616 15.156,10.89 C13.733,8.843 10.653,7.999 6.999,7.999 Z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div class="message__time">May 23</div>
+                          </div>
+                          <div class="message__prev">
+                            Hello John Smith! Nunc placerat id...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="pin-menu__row">
+                      <a class="message__link" href="#">
+                        <div class="pin-menu__row-img" style="background-image: url();"></div>
+                        <div class="pin-menu__row-info">
+                          <div class="message__header">
+                            <div class="message__name">Adnan
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="16px" height="12px">
+                                  <path fill-rule="evenodd" fill="rgb(85, 85, 85)"
+                                    d="M7.333,3.338 L7.333,0.999 C7.333,0.448 6.884,0.0 6.333,0.0 C6.85,0.0 5.845,0.94 5.659,0.267 L5.229,0.665 C3.813,1.975 1.443,4.168 0.230,5.384 C0.81,5.534 0.0,5.752 0.0,5.999 C0.0,6.246 0.81,6.464 0.230,6.614 C1.443,7.830 3.813,10.23 5.229,11.333 L5.659,11.731 C5.845,11.904 6.85,11.999 6.333,11.999 C6.884,11.999 7.333,11.550 7.333,10.999 L7.333,8.668 C12.133,8.735 15.333,10.249 15.333,11.666 C15.333,11.850 15.482,11.999 15.666,11.999 C15.850,11.999 15.999,11.850 15.999,11.666 C15.999,7.174 12.142,3.501 7.333,3.338 ZM6.999,7.999 C6.815,7.999 6.666,8.148 6.666,8.332 L6.666,10.999 C6.666,11.183 6.516,11.332 6.333,11.332 C6.231,11.332 6.157,11.284 6.113,11.242 L5.682,10.844 C4.269,9.537 1.906,7.350 0.702,6.144 C0.684,6.126 0.666,6.74 0.666,5.999 C0.666,5.924 0.684,5.872 0.702,5.855 C1.906,4.648 4.269,2.461 5.682,1.154 L6.113,0.756 C6.157,0.715 6.231,0.666 6.333,0.666 C6.516,0.666 6.666,0.815 6.666,0.999 L6.666,3.666 C6.666,3.850 6.815,3.999 6.999,3.999 C11.7,3.999 14.363,6.616 15.156,10.89 C13.733,8.843 10.653,7.999 6.999,7.999 Z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div class="message__time">Mar 26</div>
+                          </div>
+                          <div class="message__prev">
+                            Hello John Smith! Nunc placerat id...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__pin-wrapper arrow-bottom">
+                <a class="header__icon lnr lnr-cart" href="#">
+                  <span>2</span>
+                </a>
+                <div class="pin-menu cart">
+                  <div class="cart__body">
+                    <div class="cart__row">
+                      <div class="cart__img" style="background-image: url();"></div>
+                      <div class="cart__text">
+                        <a class="cart__title" href="#">
+                          Finance and Consulting
+                          Business Theme
+                        </a>
+                        <a class="cart__theme theme theme-wp" href="#">Wordpress</a>
+                      </div>
+                      <div class="cart__info">
+                        <button class="cart__del lnr lnr-trash"></button>
+                        <div class="cart__price">$60</div>
+                      </div>
+                    </div>
+                    <div class="cart__row">
+                      <div class="cart__img" style="background-image: url();"></div>
+                      <div class="cart__text">
+                        <a class="cart__title" href="#">
+                          Flounce - Multipurpose
+                          OpenCart Theme
+                        </a>
+                        <a class="cart__theme theme theme-wp" href="#">Wordpress</a>
+                      </div>
+                      <div class="cart__info">
+                        <button class="cart__del lnr lnr-trash"></button>
+                        <div class="cart__price">$20</div>
+                      </div>
+                    </div>
+                    <div class="cart__total">
+                      Total : <span>$80</span>
+                    </div>
+                    <div class="cart__buttons">
+                      <a class="cart__btn cart__btn--cart" href="#">Go to Cart</a>
+                      <a class="cart__btn cart__btn--checkout" href="#">Go to Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__user arrow-bottom">
+              <div class="header__user-img" style="background-image: url();"></div>
+              <div class="header__user-info">
+                <div class="header__user-name">Taofiq Hakim</div>
+                <div class="header__user-money">$20.45</div>
+              </div>
+              <div class="header-dropdown user__header-dropdown">
+                <ul class="header-dropdown__list">
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-user"></span>
+                      Profile Page
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-home"></span>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-cog"></span>
+                      Account Settings
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-cart"></span>
+                      Your Purchases
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-heart"></span>
+                      Your Favorites
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-dice"></span>
+                      Add Credits
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-chart-bars"></span>
+                      Sales Statements
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-upload"></span>
+                      Upload Item
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-book"></span>
+                      Edit Item
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-briefcase"></span>
+                      Withdrawals
+                    </a>
+                  </li>
+                  <li class="header-dropdown__item user__dropdown-item">
+                    <a class="header-dropdown__link user__dropdown-link" href="#">
+                      <span class="lnr lnr-exit"></span>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner header__inner">
+          <nav class="menu">
+            <div class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item menu__dropdown">
+                <a class="menu__link" href="#">HOME</a>
+                <div class="header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Home One Multi User
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Home Two Single User
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Home Three Product
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item menu__dropdown">
+                <a class="menu__link" href="#">all products</a>
+                <div class="header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Recent Items
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Popular Items
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Featured Items
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Free Templates
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Follow Feed
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Top Authors
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item menu__dropdown">
+                <a class="menu__link" href="#">wordpress</a>
+                <div class="header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Popular Items
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Admin Templates
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Blog / Magazine / News
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Creative
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Corporate Business
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Resume Portfolio
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        eCommerce
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Entertainment
+                      </a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a class="header-dropdown__link" href="#">
+                        Landing Pages
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">festures</a>
+              </li>
+              <li class="menu__item pages-item">
+                <a class="menu__link" href="#">Pages</a>
+                <div class="pages">
+                  <div class="pages__inner">
+                    <div class="pages__list-wrapper">
+                      <div class="pages__title">MartPlace Pages</div>
+                      <ul class="pages__list">
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Home Page One
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Home Page Two
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Home Page Three
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Products Grid
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Products List
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Category Grid Sidebar
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Category List Sidebar
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Search Product
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Product V-1
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Product V-2
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Product V-3
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Items Comments
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Items Reviews
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Items Support
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Single Items FAQs
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Favorites Items
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Author Profile
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Author Items
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Customer Reviews
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Followers
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Following
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Product View Variations
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pages__list-wrapper pages__list-wrapper--small">
+                      <div class="pages__title">Dashboard</div>
+                      <ul class="pages__list">
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Dashboard
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Account Settings
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Author Purchases
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Add Credits
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Statements
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Invoice
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Upload Item
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Edit Items
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Followers
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Withdrawals
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Add Payment Method
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pages__list-wrapper">
+                      <div class="pages__title">Others Pages</div>
+                      <ul class="pages__list">
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Notifications
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Message Inbox
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Message Compose
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Shopping Cart
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Checkout
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Login
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Register
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Recovery Password
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Support Forum
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            How It Works
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            About Us
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Pricing Plan
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Testimonials
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            FAQs
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            FAQs Details
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Affiliates
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Terms & Conditions
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Blog V-1
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Blog V-2
+
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Blog Details
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Following
+                          </a>
+                        </li>
+                        <li class="pages__list-item">
+                          <a class="pages__list-link" href="#">
+                            Contact Us
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__form-open lnr lnr-magnifier"></div>
+          <form class="header__form form">
+            <input class="header__form-input input" type="text" placeholder="Search product here..." required>
+            <button class="header__form-btn lnr lnr-magnifier input-btn"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="top">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">404</li>
+        </ul>
+      </div>
+      <div class="page-title">Error-404</div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="error">
+      <div class="container">
+        <div class="error__inner">
+          <img class="error__img" src="images/error.png" alt="">
+          <div class="error__text">
+            Oops! Page Not Found
+          </div>
+          <a class="error__link" href="#">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--about">
+            <div class="footer__logo">
+              <a class="footer__logo-link" href="#">
+                <img class="footer__logo-img" src="images/footer-logo.png" alt="">
+              </a>
+            </div>
+            <p class="footer__about-text">
+              Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
+              quam.
+            </p>
+            <div class="footer__contacts">
+              <div class="footer__phone">
+                Phone: <a href="tel:+67898752235">+6789-875-2235</a>
+              </div>
+              <a class="footer__mail" href="mailto:support@aazztech.com">support@aazztech.com</a>
+              <div class="footer__adress">
+                202 New Hampshire Avenue
+                Northwest #100, New York-2573
+              </div>
+            </div>
+          </div>
+          <div class="footer__col footer__col--list">
+            <div class="footer__col-title">Our Company</div>
+            <div class="footer__col-body">
+              <ul class="footer__col-list">
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">About Us</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">How It Work</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Affiliates</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Testimonials</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Contact Us</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Copyright Notice</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--list">
+            <div class="footer__col-title">Help Support</div>
+            <div class="footer__col-body">
+              <ul class="footer__col-list">
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Support Forum</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Terms & Conditions</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Support Policy</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Refund Policy</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">FAQs</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Buyers Faq</a>
+                </li>
+                <li class="footer__col-item">
+                  <a class="footer__col-link" href="#">Sellers Faq</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--subscribe">
+            <div class="footer__col-title">
+              Newsletter
+            </div>
+            <div class="footer__col-body">
+              <p class="footer__subscribe-text">
+                Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+              </p>
+              <form class="footer__form form">
+                <input type="text" class="footer__form-input input" placeholder="Enter email" required>
+                <button class="footer__form-btn input-btn" type="submit">Submit</button>
+              </form>
+              <ul class="footer__social social">
+                <li class="social__item"><a class="social__link icon-facebook" href="#"></a></li>
+                <li class="social__item"><a class="social__link icon-twitter" href="#"></a></li>
+                <li class="social__item"><a class="social__link icon-google" href="#"></a></li>
+                <li class="social__item"><a class="social__link icon-pinterest" href="#"></a></li>
+                <li class="social__item"><a class="social__link icon-linkedin" href="#"></a></li>
+                <li class="social__item"><a class="social__link icon-dribbble" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <div class="container">
+        <div class="footer__copy-inner">
+          ©2017 <span>MartPlace</span>.
+          All rights reserved.
+          Created by <span>AazzTech</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

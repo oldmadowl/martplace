@@ -2585,4 +2585,17 @@
 }
 //end category
 
+
+//start favourite
+.favourite{
+  .category__items{
+    margin-left: -30px;
+  }
+  .category__pagination{
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+//end favourite
+
 @import 'media';
